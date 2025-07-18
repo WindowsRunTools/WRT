@@ -6,7 +6,7 @@ import winreg
 REGISTRY_PATH = r"Software\WRT"
 
 def get_latest_version():
-    sheet_id = "1c8gg13-GlvBaxH06XiTsfmcyT20Ukdt9Up0ix2JV38E"
+    sheet_id = ""
     csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv"
 
     try:
