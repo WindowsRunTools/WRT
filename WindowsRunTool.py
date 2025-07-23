@@ -25,7 +25,7 @@ import CheckUpdate
 # --------------------------------------------------------------------------------------------------------------------- #
 REGISTRY_PATH = r"Software\WRT"  # HKEY_CURRENT_USER\SOFTWARE\WRT
 VALUE_NAME = "ThemeColor"
-VALUE_VERSION = "bêta"
+VALUE_VERSION = "1.0.0"
 
 def is_admin():
     try:
@@ -35,7 +35,6 @@ def is_admin():
 
 def relaunch_as_admin():
     script_path = os.path.abspath(__file__)
-    # Lance le même script en admin avec Python
     ctypes.windll.shell32.ShellExecuteW(
         None, "runas", sys.executable, f'"{script_path}"', None, 1)
     sys.exit(0)
